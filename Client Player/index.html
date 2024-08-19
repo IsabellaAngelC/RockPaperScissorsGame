@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css">
+    <title>PLAYER</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      #data-container {
+        margin-top: 20px;
+      }
+      .item {
+        margin-bottom: 10px;
+      }
+      img {
+        width: 30px;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>PLAYER</h1>
+
+    <form id="player-form">
+      <label for="player-name">Enter your name:</label>
+      <input type="text" id="player-name" name="player-name" required>
+      
+      <label for="move">Choose your move:</label>
+      <select id="move" name="move">
+        <option value="rock">Rock</option>
+        <option value="paper">Paper</option>
+        <option value="scissors">Scissors</option>
+      </select>
+      
+      <button id="submit-button" type="submit">Submit</button>
+  </form>
+  
+    <div id="data-container"></div>
+  
+    <script src="index.js"></script>
+  </body>
+</html>
